@@ -1,4 +1,4 @@
-# Forage Cybersecurity Virtual Experience
+# 🔐 Deloitte Cybersecurity Virtual Experience (Forage)
 
 ## 📌 Project Overview
 This project is part of a cybersecurity virtual internship where I analyzed web server logs to detect suspicious activity and potential security threats within an internal system.
