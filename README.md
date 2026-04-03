@@ -39,11 +39,11 @@ This project is part of a cybersecurity virtual internship where I analyzed web 
 ### Log File Analysis
 ![Log Analysis](screenshots/log-analysis.png)
 
-### Analysis Output
-![Analysis Output](screenshots/analysis.png)
+### Quiz 
+![Analysis Output](screenshots/quiz-result.png)
 
 ### GitHub Repository
-![GitHub Repo](screenshots/github.png)
+![GitHub Repo](screenshots/github-repo.png)
 
 ---
 
