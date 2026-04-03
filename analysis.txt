@@ -1,0 +1,52 @@
+Cybersecurity Log Analysis
+
+I analyzed the web_requests.log file to check if there was any suspicious activity related to the reported breach.
+
+From the logs, each IP address represents a user session inside Daikibo’s internal network.
+
+---
+
+ ** IP: 192.168.0.50  
+This user followed a normal pattern:
+- Logged in properly  
+- Loaded dashboard files  
+- Made a few API requests  
+
+This looks like normal usage.
+
+---
+
+ ** IP: 192.168.0.73  
+This user also logged in correctly but made many API requests in a short time.  
+It looks a bit unusual, but it could still be a user refreshing frequently.
+
+---
+
+ ** IP: 192.168.0.101  (Suspicious)  
+This is where I found clear abnormal behavior.
+
+- API requests are made repeatedly  
+- The timing is exactly the same every hour (for example: 17:00:48, 18:00:48, etc.)  
+- This is not how a human interacts with a system  
+
+This strongly suggests an automated script or bot.
+
+Also, the system clearly mentions that there is no continuous polling, so this behavior violates the expected usage.
+
+---
+
+Suspicious IP:
+192.168.0.101  
+
+User ID:
+mdB7yD2dp1BFZPontHBQ1Z  
+
+---
+
+Conclusion:
+
+The attack did not come from the internet because the system is hosted on an internal network.
+
+The issue was caused internally by automated API requests using a valid user account. This could mean the account was misused or compromised.
+
+Overall, the behavior points to scripted access rather than normal user activity.
